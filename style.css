@@ -1,0 +1,121 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.app {
+    background-color: hsl(0, 0%, 94%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app .container {
+    width: 40%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 40px;
+    border-radius: 10px 10px 100px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+.app .container .data {
+    display: flex;
+    gap: 40px;
+}
+.app .container .data .day,
+.app .container .data .month,
+.app .container .data .year {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app .container .data p {
+    color: red;
+    font-size: 12px;
+    font-family: poppins;
+}
+
+.app .container .data label {
+    font-family: poppins;
+    color: hsl(0, 1%, 44%);
+    font-weight: 400;
+}
+.app .container .data input {
+    font-family: poppins;
+    color: hsl(0, 1%, 44%);
+    font-weight: 400;
+    padding: 10px;
+    width: 120px;
+}
+.app .container .data input:focus {
+    outline: none;
+}
+.app .container .icon {
+    display: flex;
+    align-items: center;
+    
+}
+.app .container .icon hr {
+    width: 80%;
+    height: 2px;
+}
+.app .container .icon svg {
+    background-color:  hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.app .container .print {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 60px; */
+}
+.app .container .print .years,
+.app .container .print .months,
+.app .container .print .days {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.app .container .print .mainas {
+    display: flex;
+    gap: 20px;
+}
+
+/* .app .container .print div {
+    width: 30px;
+    height: 10px;
+    background-color:  hsl(259, 100%, 65%);
+} */
+/* .app .container .print .years div:nth-child(2),
+.app .container .print .months div:nth-child(2),
+.app .container .print .days div:nth-child(2) {
+    position: absolute;
+    left: 40px;
+    display: flex;
+    align-items: center;
+} */
+.app .container .print h1 {
+    font-size: 60px;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+
+.app .container .print h3 {
+    color: hsl(259, 100%, 65%) ;
+    font-weight: bold;
+    font-size: 50px;
+} 
